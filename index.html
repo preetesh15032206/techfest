@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Techfest, IIT Bombay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; }
+    .glassmorphism { backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .parallax { background-image: linear-gradient(to bottom, #03055B, #03055B); background-size: 100% 300%; background-position: 0% 100%; }
+    .parallax:hover { background-position: 0% 0%; }
+    section:target { scroll-margin-top: 100px; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 glassmorphism bg-gradient-to-r from-blue-900 to-blue-700 text-white flex justify-between items-center px-6 py-4 z-50 relative">
+    <h1 class="text-2xl font-bold">Techfest, IIT Bombay</h1>
+    <ul id="menu" class="hidden sm:flex space-x-6 font-medium">
+      <li><a href="#home" class="hover:text-yellow-400 duration-200 flex items-center space-x-1"><i data-lucide="home"></i><span>Home</span></a></li>
+      <li><a href="#about" class="hover:text-yellow-400 duration-200 flex items-center space-x-1"><i data-lucide="info"></i><span>About</span></a></li>
+      <li><a href="#events" class="hover:text-yellow-400 duration-200 flex items-center space-x-1"><i data-lucide="calendar"></i><span>Events</span></a></li>
+      <li><a href="#schedule" class="hover:text-yellow-400 duration-200 flex items-center space-x-1"><i data-lucide="clock"></i><span>Schedule</span></a></li>
+      <li><a href="#contact" class="hover:text-yellow-400 duration-200 flex items-center space-x-1"><i data-lucide="phone"></i><span>Contact</span></a></li>
+    </ul>
+    <button id="hamburger" class="sm:hidden flex text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen parallax p-20 flex justify-center items-center relative text-center">
+    <h1 class="text-5xl sm:text-6xl font-extrabold text-white animate-pulse" data-aos="fade-down">
+      Welcome to <span class="text-yellow-400">Techfest, IIT Bombay</span>
+    </h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white p-10 sm:p-20 mt-10 shadow-lg rounded-lg glassmorphism mx-4 sm:mx-20" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-blue-900 mb-4">About Us</h2>
+    <p class="text-lg text-gray-700">
+      Techfest is Asia’s largest science & technology festival, drawing over <strong>1.8 lakh visitors</strong> in its latest edition, with student innovators from across the world showcasing their talent :contentReference[oaicite:1]{index=1}.
+    </p>
+    <p class="mt-4 text-lg text-gray-700">
+      Organized annually since 1998, it combines competitions, exhibitions, lectures, and social initiatives under one roof—bridging academia, industry, and society for impactful engagement :contentReference[oaicite:2]{index=2}.
+    </p>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="bg-gray-100 p-10 sm:p-20 mt-10 shadow-lg rounded-lg glassmorphism mx-4 sm:mx-20" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-blue-900 mb-4">Flagship Events</h2>
+    <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+      <li><strong>Technoholix</strong>: A 3‑day EDM & laser night with 20K+ attendees and spectacular laser displays :contentReference[oaicite:3]{index=3}.</li>
+      <li><strong>International Robowars</strong>: 50+ national and 10+ international teams, prize pool ₹13 Lakh, globally broadcast :contentReference[oaicite:4]{index=4}.</li>
+      <li><strong>Techfest World MUN</strong>: Model UN with 9 committees and 300+ delegates held in Dec 2024 :contentReference[oaicite:5]{index=5}.</li>
+    </ul>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="bg-white p-10 sm:p-20 mt-10 shadow-lg rounded-lg glassmorphism mx-4 sm:mx-20" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-blue-900 mb-4">Last Edition Highlights</h2>
+    <p class="text-lg text-gray-700">
+      The 28th edition took place from <strong>17–19 Dec 2024</strong>, with showcase events like Tech Connect, DRDO demos, Unitree G1 humanoid robots, and a 300‑drone light show :contentReference[oaicite:6]{index=6}.
+    </p>
+    <p class="mt-4 text-lg text-gray-700">
+      Keynote speakers included Jeet Adani, DRDO leaders, and experts from ISRO and LIGO—making it a true “Sustainnovative Sentience” festival :contentReference[oaicite:7]{index=7}.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 p-10 sm:p-20 mt-10 shadow-lg rounded-lg glassmorphism mx-4 sm:mx-20 mb-20" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-blue-900 mb-4">Get in Touch</h2>
+    <p class="text-lg text-gray-700">
+      Techfest Office, Students’ Activity Centre, IIT Bombay<br>
+      📞 +91 98225 07434 (Office) :contentReference[oaicite:8]{index=8}<br>
+      ✉️ <a href="mailto:techfest.mun@gmail.com" class="text-blue-600 hover:underline">techfest.mun@gmail.com</a> :contentReference[oaicite:9]{index=9}<br>
+      🌍 Visit <a href="https://techfest.org" target="_blank" rel="noopener" class="text-blue-600 hover:underline">techfest.org</a> :contentReference[oaicite:10]{index=10}.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 flex flex-col md:flex-row justify-center md:justify-between items-center px-6 space-y-4 md:space-y-0">
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-yellow-500"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+      <a href="#" class="hover:text-yellow-500"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+      <a href="#" class="hover:text-yellow-500"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+    </div>
+    <p class="text-sm">&copy; 2025 Techfest, IIT Bombay</p>
+  </footer>
+
+  <!-- Back-to-Top -->
+  <button id="back-to-top" class="fixed bottom-4 right-4 bg-blue-900 text-white p-3 rounded-full shadow-lg hover:bg-yellow-500">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('hamburger').addEventListener('click', () => {
+      const m = document.getElementById('menu');
+      m.classList.toggle('hidden'); m.classList.toggle('flex');
+      m.classList.toggle('flex-col'); m.classList.toggle('absolute');
+      m.classList.toggle('top-full'); m.classList.toggle('left-0');
+      m.classList.toggle('w-full'); m.classList.toggle('bg-blue-900');
+      m.classList.toggle('p-4');
+    });
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      navLinks.forEach(l => {
+        const sec = document.querySelector(l.hash);
+        if (sec.offsetTop - 120 <= scrollY && sec.offsetTop + sec.offsetHeight - 120 > scrollY) {
+          l.classList.add('text-yellow-400');
+        } else {
+          l.classList.remove('text-yellow-400');
+        }
+      });
+    });
+    document.getElementById('back-to-top').onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+  </script>
+</body>
+</html>
